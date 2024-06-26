@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import antImage from '../public/images/ant.png';
+import antImage from '../assets/ant.svg';
 
 const Ant = ({ id, onClick }) => {
   const [position, setPosition] = useState({ top: 0, left: 0 });
