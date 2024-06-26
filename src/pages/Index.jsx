@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import antImage from '../assets/ant.svg';
 
 const Ant = ({ id, onClick }) => {
   const [position, setPosition] = useState({ top: 0, left: 0 });
@@ -15,7 +16,9 @@ const Ant = ({ id, onClick }) => {
   }, []);
 
   return (
-    <div
+    <img
+      src={antImage}
+      alt="ant"
       onClick={() => onClick(id)}
       style={{
         position: 'absolute',
@@ -23,8 +26,6 @@ const Ant = ({ id, onClick }) => {
         left: position.left,
         width: '30px',
         height: '30px',
-        backgroundColor: 'brown',
-        borderRadius: '50%',
         cursor: 'pointer',
       }}
     />
