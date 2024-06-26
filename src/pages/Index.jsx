@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import antImage from '../public/images/ant.png';
 
 const Ant = ({ id, onClick }) => {
   const [position, setPosition] = useState({ top: 0, left: 0 });
@@ -23,8 +24,8 @@ const Ant = ({ id, onClick }) => {
         left: position.left,
         width: '30px',
         height: '30px',
-        backgroundColor: 'brown',
-        borderRadius: '50%',
+        backgroundImage: `url(${antImage})`,
+        backgroundSize: 'cover',
         cursor: 'pointer',
       }}
     />
